@@ -1,1 +1,38 @@
-@import url(index.css);/*# sourceMappingURL=global.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-light: #f67841;
+  --brand-mid: #f3541c;
+  --brand-dark: #e43a12;
+  --text-primary: #292524;
+  --text-secondary: #57534e;
+  --text-tertiary: #8f8881;
+  --text-highlight: #e43a12;
+  --surface-primary: #ffffff;
+  --surface-secondary: ##fee7d6;
+  --surface-disabled: ##e7e5e4;
+  --stroke-default: #d6d3d1;
+  --stroke-highlight: #f3541c;
+  --semantic-error: #dc2626;
+  --supporting-orange: #f9a474;
+  --supporting-yellow: #fedf6f;
+  --supporting-green: #c7d78d;
+  --supporting-blue: #b8cedc;
+  --supporting-violet: #c3b2e7;
+  --supporting-pink: #f682a5;
+  --font-family: "Poppins", sans-serif;
+  --text: 400 1rem/1.5 var(--font-family);
+  --text-sm: 400 0.875rem/1.4 var(--font-family);
+  --heading1: bold 2rem/1.2 var(--font-family);
+  --heading2: bold 1.5rem/1.2 var(--font-family);
+  --heading3: bold 1.25rem/1.2 var(--font-family);
+  --heading4: normal 1rem/1.2 var(--font-family);
+}
+
+body {
+  background-color: var(--surface-primary);
+}/*# sourceMappingURL=global.css.map */
