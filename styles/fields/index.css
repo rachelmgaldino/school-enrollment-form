@@ -56,9 +56,32 @@ select {
 .input-wrapper:has([disabled]) {
   opacity: 0.5;
 }
-.input-wrapper:has([disabled]) input {
+
+input[disabled] {
   background-color: var(--surface-disabled);
   cursor: not-allowed;
   border: 1px solid var(--stroke-default);
   color: var(--text-primary);
+}
+input + .description {
+  font: var(--text-sm);
+  color: #78716c;
+  margin-top: 0.25rem;
+  display: inline-block;
+}
+input:invalid {
+  border: 0.125rem solid var(--semantic-error);
+}
+input[required] + .error {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+input[required] + .error .error-message {
+  font: var(--text-sm);
+  color: var(--semantic-error);
+}
+input:not(:focus):valid + .error {
+  display: none;
 }/*# sourceMappingURL=index.css.map */
