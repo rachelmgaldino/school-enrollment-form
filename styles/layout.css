@@ -9,9 +9,6 @@ main {
   overflow: auto;
   background-color: var(--surface-primary);
   padding: 4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
 }
 main .main-container {
   max-width: 33rem;
