@@ -1,6 +1,5 @@
 @import url(fields/index.css);
 fieldset {
-  margin-block: 3rem;
   border: none;
   display: grid;
   gap: 1.5rem;
@@ -9,4 +8,8 @@ fieldset {
 legend {
   font: 600 1rem/1.25 var(--font-family);
   margin-bottom: 1.5rem;
+}
+
+fieldset + fieldset {
+  margin-top: 3rem;
 }/*# sourceMappingURL=forms.css.map */

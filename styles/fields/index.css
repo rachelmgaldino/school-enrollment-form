@@ -47,4 +47,18 @@ input[type=date]::before {
 
 select {
   background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
+}
+
+.home-address .flex {
+  gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]) {
+  opacity: 0.5;
+}
+.input-wrapper:has([disabled]) input {
+  background-color: var(--surface-disabled);
+  cursor: not-allowed;
+  border: 1px solid var(--stroke-default);
+  color: var(--text-primary);
 }/*# sourceMappingURL=index.css.map */
