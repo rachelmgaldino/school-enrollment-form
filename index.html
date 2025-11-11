@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Estrelas do Amanhã</title>
+    <title>Stars of Tomorrow</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -20,48 +20,48 @@
           <header>
             <div class="back">
               <img src="/assets/icons/arrow-left-02.svg" alt="" />
-              <span>Voltar</span>
+              <span>Back</span>
             </div>
 
-            <h1>Formulário de matrícula</h1>
-            <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+            <h1>Enrollment Form</h1>
+            <p>Fill in the details below to enroll your child in the Stars of Tomorrow early childhood education school.</p>
           </header>
 
           <form action="" method="post" enctype="multipart/form-data">
             <fieldset class="child-info">
-              <legend>Informações da criança</legend>
+              <legend>Child Information</legend>
 
               <div class="input-wrapper">
-                <label for="fullname">Nome completo</label>
-                <input type="text" name="fullname" id="fullname" placeholder="Qual o nome da criança?" />
+                <label for="fullname">Full Name</label>
+                <input type="text" name="fullname" id="fullname" placeholder="What is the child's name?" />
               </div>
 
               <div class="input-wrapper">
-                <label for="birthdate">Data de nascimento</label>
+                <label for="birthdate">Birthdate</label>
                 <input type="date" name="birthdate" id="birthdate" />
               </div>
 
               <div class="select-wrapper">
-                <label for="gender">Gênero</label>
+                <label for="gender">Gender</label>
                 <select name="gender" id="gender">
-                  <option value="male">Masculino</option>
-                  <option value="female">Feminino</option>
-                  <option value="na">Prefiro não responder</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="na">Prefer not to say</option>
                 </select>
               </div>
 
               <div class="textarea-wrapper">
-                <label for="medical-info">Informações médicas</label>
+                <label for="medical-info">Medical Information</label>
                 <textarea
                   name="medical-info"
                   id="medical-info"
                   rows="4"
-                  placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (Se sim, especifique.)"
+                  placeholder="Does the child have any medical conditions the school should be aware of? (If yes, please specify.)"
                 ></textarea>
               </div>
 
               <div class="droparea-wrapper">
-                <label for="birth-certificate">Certidão de nascimento</label>
+                <label for="birth-certificate">Birth Certificate</label>
                 <div class="dropzone">
                   <input type="file" name="birth-certificate" id="birth-certificate" />
 
@@ -83,56 +83,56 @@
                   </svg>
 
                   <p>
-                    Clique aqui para <br />
-                    selecionar arquivos
+                    Click here to <br />
+                    select files
                   </p>
                 </div>
               </div>
             </fieldset>
 
             <fieldset class="home-address">
-              <legend>Endereço residencial</legend>
+              <legend>Home Address</legend>
 
               <div class="input-wrapper">
-                <label for="postal-code">CEP</label>
+                <label for="postal-code">Postal Code</label>
                 <input type="text" name="postal-code" id="postal-code" />
               </div>
 
               <div class="flex">
                 <div class="input-wrapper flex-2">
-                  <label for="address">Rua</label>
+                  <label for="address">Street</label>
                   <input type="text" name="address" id="address" value="Rua das Flores" disabled />
                 </div>
 
                 <div class="input-wrapper flex-1">
-                  <label for="home-number">Número</label>
+                  <label for="home-number">Number</label>
                   <input type="text" name="home-number" id="home-number" />
                 </div>
               </div>
 
               <div class="flex">
                 <div class="input-wrapper flex-2">
-                  <label for="city">Cidade</label>
+                  <label for="city">City</label>
                   <input type="text" name="city" id="city" value="São Paulo" disabled />
                 </div>
 
                 <div class="input-wrapper flex-1">
-                  <label for="state">Estado</label>
+                  <label for="state">State</label>
                   <input type="text" name="state" id="state" value="SP" disabled />
                 </div>
               </div>
             </fieldset>
 
             <fieldset class="legal-guardian">
-              <legend>Informações do responsável</legend>
+              <legend>Legal Guardian Information</legend>
               <div class="input-wrapper">
-                <label for="guardian-name">Nome do responsável</label>
+                <label for="guardian-name">Guardian's Name</label>
                 <input type="text" name="guardian-name" id="guardian-name" />
-                <span class="description">Principal responsável legal e contato de emergência</span>
+                <span class="description">Primary legal guardian and emergency contact</span>
               </div>
 
               <div class="input-wrapper">
-                <label for="phone-number">Telefone</label>
+                <label for="phone-number">Phone Number</label>
                 <input type="text" name="phone-number" id="phone-number" placeholder="(10) 9 8765-4321" />
               </div>
 
@@ -141,53 +141,53 @@
                 <input type="email" name="e-mail" id="e-mail" required />
                 <div class="error">
                   <img src="assets/icons/alert-circle.svg" alt="" />
-                  <span class="error-message">Insira um e-mail válido</span>
+                  <span class="error-message">Please enter a valid email</span>
                 </div>
               </div>
             </fieldset>
 
             <fieldset class="enrollment-options">
-              <legend>Opções de matrícula</legend>
+              <legend>Enrollment Options</legend>
 
               <div class="input-wrapper">
-                <label>Selecione o turno de estudo</label>
+                <label>Select the study shift</label>
 
                 <div class="radio-wrapper">
                   <div class="radio-inner">
                     <div class="radio-image"></div>
                     <input type="radio" name="school-shift" id="morning" value="morning" />
                     <img src="assets/icons/sun-cloud-02.svg" alt="" />
-                    <label for="morning">Manhã</label>
+                    <label for="morning">Morning</label>
                   </div>
                   <div class="radio-inner">
                     <div class="radio-image"></div>
                     <input type="radio" name="school-shift" id="afternoon" value="afternoon" />
                     <img src="assets/icons/sun-02.svg" alt="" />
-                    <label for="afternoon">Tarde</label>
+                    <label for="afternoon">Afternoon</label>
                   </div>
                 </div>
               </div>
               <div class="input-wrapper">
-                <label>Em qual esporte você gostaria de inscrever seu filho?</label>
+                <label>In which sport would you like to enroll your child?</label>
 
                 <div class="radio-wrapper">
                   <div class="radio-inner">
                     <div class="radio-image"></div>
                     <input type="radio" name="sports" id="football" value="football" />
                     <img src="assets/icons/football.svg" alt="" />
-                    <label for="football">Futebol</label>
+                    <label for="football">Football</label>
                   </div>
                   <div class="radio-inner">
                     <div class="radio-image"></div>
                     <input type="radio" name="sports" id="basketball" value="basketball" />
                     <img src="assets/icons/basketball-02.svg" alt="" />
-                    <label for="basketball">Basquete</label>
+                    <label for="basketball">Basketball</label>
                   </div>
                   <div class="radio-inner">
                     <div class="radio-image"></div>
                     <input type="radio" name="sports" id="swimming" value="swimming" />
                     <img src="assets/icons/swimming.svg" alt="" />
-                    <label for="swimming">Natação</label>
+                    <label for="swimming">Swimming</label>
                   </div>
                   <div class="radio-inner">
                     <div class="radio-image"></div>
@@ -199,13 +199,13 @@
                     <div class="radio-image"></div>
                     <input type="radio" name="sports" id="volley" value="volley" />
                     <img src="assets/icons/volleyball.svg" alt="" />
-                    <label for="volley">Vôlei</label>
+                    <label for="volley">Volleyball</label>
                   </div>
                   <div class="radio-inner">
                     <div class="radio-image"></div>
                     <input type="radio" name="sports" id="boxing" value="boxing" />
                     <img src="assets/icons/boxing-glove-01.svg" alt="" />
-                    <label for="boxing">Luta</label>
+                    <label for="boxing">Boxing</label>
                   </div>
                 </div>
               </div>
@@ -215,13 +215,13 @@
               <div class="checkbox-image"></div>
               <input type="checkbox" name="terms" id="terms" />
               <label for="terms"
-                >Declaro que li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a> da escola Estrela do Amanhã.
+                >I declare that I have read and agree to the <a href="#">Terms and Conditions</a> and the <a href="#">Privacy Policy</a> of Estrela do Amanhã school.
               </label>
             </div>
 
             <div class="actions-wrapper">
-              <button class="btn-secondary" type="button">Salvar respostas</button>
-              <button class="btn-primary" type="submit">Fazer matrícula</button>
+              <button class="btn-secondary" type="button">Save answers</button>
+              <button class="btn-primary" type="submit">Enroll</button>
             </div>
           </form>
         </div>
@@ -230,9 +230,9 @@
       <aside>
         <div class="aside-container">
           <header>
-            <img src="assets/logo.svg" alt="" />
-            <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
-            <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+            <img src="assets/logo-eng.svg" alt="" />
+            <h2>Because every moment of <span>learning</span> counts</h2>
+            <p>Enroll your child in our school and watch them flourish in a welcoming, safe, and stimulating environment.</p>
           </header>
           <img src="assets/Illustration.svg" alt="" />
         </div>
