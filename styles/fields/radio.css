@@ -1,0 +1,46 @@
+label + .radio-wrapper {
+  margin-top: 1rem;
+}
+
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); /* automatically creates as many columns as will fit into the container, each being at least 7.5rem wide and can grow to fill available space, up to a maximum of 1fr */
+  gap: 1rem;
+}
+
+.radio-inner {
+  border: 1px solid var(--stroke-default);
+  border-radius: 0.5rem;
+  display: grid;
+  justify-items: center;
+  padding: 2rem 1rem 1rem;
+  gap: 0.5rem;
+  position: relative;
+}
+.radio-inner input,
+.radio-inner input:focus,
+.radio-inner input:hover {
+  all: unset;
+  position: absolute;
+  inset: 0;
+}
+.radio-inner .radio-image {
+  background-image: url(../../assets/icons/radio-default.svg);
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+.radio-inner:hover, .radio-inner:focus-within {
+  border: 1px solid var(--stroke-highlight);
+}
+.radio-inner:hover .radio-image, .radio-inner:focus-within .radio-image {
+  background-image: url(../../assets/icons/radio-hover.svg);
+}
+.radio-inner:has(:checked) {
+  border: 1px solid var(--stroke-highlight);
+}
+.radio-inner:has(:checked) .radio-image {
+  background-image: url(../../assets/icons/radio-checked.svg);
+}/*# sourceMappingURL=radio.css.map */

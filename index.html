@@ -124,6 +124,7 @@
             </fieldset>
 
             <fieldset class="legal-guardian">
+              <legend>Informações do responsável</legend>
               <div class="input-wrapper">
                 <label for="guardian-name">Nome do responsável</label>
                 <input type="text" name="guardian-name" id="guardian-name" />
@@ -141,6 +142,72 @@
                 <div class="error">
                   <img src="assets/icons/alert-circle.svg" alt="" />
                   <span class="error-message">Insira um e-mail válido</span>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="enrollment-options">
+              <legend>Opções de matrícula</legend>
+
+              <div class="input-wrapper">
+                <label>Selecione o turno de estudo</label>
+
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="school-shift" id="morning" value="morning" />
+                    <img src="assets/icons/sun-cloud-02.svg" alt="" />
+                    <label for="morning">Manhã</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="school-shift" id="afternoon" value="afternoon" />
+                    <img src="assets/icons/sun-02.svg" alt="" />
+                    <label for="afternoon">Tarde</label>
+                  </div>
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label>Em qual esporte você gostaria de inscrever seu filho?</label>
+
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sports" id="football" value="football" />
+                    <img src="assets/icons/football.svg" alt="" />
+                    <label for="football">Futebol</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sports" id="basketball" value="basketball" />
+                    <img src="assets/icons/basketball-02.svg" alt="" />
+                    <label for="basketball">Basquete</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sports" id="swimming" value="swimming" />
+                    <img src="assets/icons/swimming.svg" alt="" />
+                    <label for="swimming">Natação</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sports" id="yoga" value="yoga" />
+                    <img src="assets/icons/yoga-02.svg" alt="" />
+                    <label for="yoga">Yoga</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sports" id="volley" value="volley" />
+                    <img src="assets/icons/volleyball.svg" alt="" />
+                    <label for="volley">Vôlei</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sports" id="boxing" value="boxing" />
+                    <img src="assets/icons/boxing-glove-01.svg" alt="" />
+                    <label for="boxing">Luta</label>
+                  </div>
+
                 </div>
               </div>
             </fieldset>
