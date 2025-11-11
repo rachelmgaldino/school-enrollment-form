@@ -10,6 +10,14 @@ legend {
   margin-bottom: 1.5rem;
 }
 
-fieldset {
+fieldset + fieldset {
   margin-top: 3rem;
+}
+
+.actions-wrapper {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  justify-content: flex-end;
 }/*# sourceMappingURL=forms.css.map */
