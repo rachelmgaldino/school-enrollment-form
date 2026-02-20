@@ -14,10 +14,18 @@ fieldset {
   margin-top: 3rem;
 }
 
+/* buttons save and enroll */
 .actions-wrapper {
   display: flex;
   gap: 1rem;
   margin-top: 3rem;
   padding-top: 1rem;
   justify-content: flex-end;
+}
+
+@media (max-width: 960px) {
+  .actions-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
 }/*# sourceMappingURL=forms.css.map */

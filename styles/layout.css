@@ -1,11 +1,13 @@
 #app {
   display: grid;
   grid-template-columns: 51.25% 48.75%;
+  grid-template-areas: "main aside";
   height: 100vh;
   overflow: hidden;
 }
 
 main {
+  grid-area: main;
   overflow: auto;
   background-color: var(--surface-primary);
   padding: 4rem;
@@ -26,6 +28,7 @@ main .back {
 }
 
 aside {
+  grid-area: aside;
   background-color: var(--surface-secondary);
   padding: 4rem;
 }
@@ -41,4 +44,36 @@ aside .aside-container header h2 span {
 }
 aside .aside-container > img {
   margin-top: 2rem;
+}
+
+@media (max-width: 960px) {
+  #app {
+    grid-template-columns: 1fr;
+    grid-template-areas: "aside" "main";
+    overflow: visible;
+    height: auto;
+  }
+  aside {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+  aside .aside-container header {
+    display: flex;
+    justify-content: center;
+  }
+  aside .aside-container header h2,
+  aside .aside-container header p {
+    display: none;
+  }
+  aside .aside-container > img {
+    margin-top: 0.75rem;
+  }
+  main {
+    padding: 1.5rem;
+  }
+  main .main-container {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
 }/*# sourceMappingURL=layout.css.map */
